@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Franklin:wght@400;700&family=Pacifico&family=Playfair+Display&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="header">
+      <a href="" class="link logo">Pompeo</a>
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul class="list nav__list">
+          <li class="item nav__item">
+            <a
+              class="link nav__link nav__link--current"
+              href="./index.html"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Home</a
+            >
+          </li>
+          <li class="item nav__item">
+            <a
+              class="link nav__link"
+              href="./index.html"
+              rel="noopener noreferrer"
+              target="_blank"
+              >About</a
+            >
+          </li>
+          <li class="item nav__item">
+            <a
+              class="link nav__link"
+              href="./index.html"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Shop</a
+            >
+          </li>
+          <li class="item nav__item">
+            <a
+              class="link nav__link"
+              href="./index.html"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="button-cart" type="button">
+        <svg class="button-cart__icon" width="20" height="20">
+          <use href="./image/cart.svg"></use>
+        </svg>
+        Cart
+      </button>
+    </header>
+    <main>
+      <!--Секция Герой -->
+      <section class="section hero">
+        <b class="section-description">Pompeo POttery</b>
+        <h1 class="hero__title">
+          Unique Porcelain<span class="ampersand">&</span>Stone Collection
+        </h1>
+        <p class="hero__text">
+          Unique & modern pottery made by our master in porcelain & stones
+        </p>
+        <button class="button button-shop" type="button">Shop Collection</button>
+      </section>
+      <!-- Секция описания проектов -->
+      <section class="section description-projects">
+        <h2 class="description-projects__title">Hand Craft Pottery</h2>
+        <div class="container description-projects__container">
+          <b class="section-description">Product Categories</b>
+          <h3 class="description-projects__title">
+            Porcelain<span class="ampersand">&</span>Pottery
+          </h3>
+          <ul class="list projects">
+            <li class="item project-vase">
+              <img
+                width="70"
+                height="70"
+                class="img"
+                src="./image/description-image-1.png"
+                alt="vase"
+              />
+              <span class="project-item__text">Vases</span>
+            </li>
+            <li class="item project-mug">
+              <img
+                width="70"
+                height="70"
+                class="img"
+                src="./image/description-image-2.png"
+                alt="mug"
+              />
+              <span class="project-item__text">Vases</span>
+            </li>
+            <li class="item project-plate">
+              <img
+                width="70"
+                height="70"
+                class="img"
+                src="./image/description-image-3.png"
+                alt="p;late"
+              />
+              <span class="project-item__text">Vases</span>
+            </li>
+          </ul>
+          <ul class="list achievements">
+            <li class="item achievements__item">
+              <h4 class="achievements__title">
+                Hand Grafted Pottery since 1990
+              </h4>
+              <p class="achievements__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum. Duis cursus, mi quis
+                viverra ornare, eros dolor interdum nulla, ut commodo diam
+                libero vitae erat. Aenean faucibus nibh et justo cursus id
+                rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.
+              </p>
+            </li>
+            <li class="item">
+              <h4 class="achievements__title">
+                We Provide Premium Pottery Produts
+              </h4>
+              <p class="achievements__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum. Duis cursus, mi quis
+                viverra ornare, eros dolor interdum nulla, ut commodo diam
+                libero vitae erat. Aenean faucibus nibh et justo cursus id
+                rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Секция Примеров продукции -->
+      <section class="section examples-products">
+        <h2 class="examples-products__title">Featured Products</h2>
+        <ul class="list examples-products__list">
+          <li class="item examples-products__item">
+            <img
+              class="img"
+              src="./image/features-image-1.png"
+              alt="vase"
+              width="252"
+            />
+            <div class="product-description">
+              <h3 class="product-description__title">Gold & Black Pottery</h3>
+              <p class="product-description__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim
+                veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex
+                ea commodo consequatuisaute.
+              </p>
+              <a
+                class="link product-description__link"
+                href=""
+                rel="noopener noreferrer"
+                >View Details</a
+              >
+            </div>
+          </li>
+          <li class="item featured-products__item">
+            <img
+              class="img"
+              src="./image/features-image-2.png"
+              alt="vase"
+              width="252"
+            />
+            <div class="product-description">
+              <h3 class="product-description__title">Orange Ceramic</h3>
+              <p class="product-description__text">
+                Pri cu dico labores officiis, odio principes complectitur ad
+                sea. Sea id doctus forensibus, nec lorem vocent aliquam eu.
+                Aliquid definitiones id cum, ad meliore perpetua referrentur
+                sed. Quas suscipit ad mea verear vivendo tincidunt.
+              </p>
+              <a
+                class="link product-description__link"
+                href=""
+                rel="noopener noreferrer"
+                >View Details</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Секция Карточки товаров -->
+      <section class="section product-collections">
+        <h2 class="product-collections__title">Product Collections</h2>
+        <div class="container collections-container">
+          <b class="section-description">Our online store</b>
+          <h3 class="collections-container__title">Pottery Collection</h3>
+          <ul class="list products-grid">
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-1.png" alt="plate" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Decor Plate</h4>
+                  <p class="product-link__price">$ 65.00 USD</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-2.png" alt="vase" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Mint Pottery</h4>
+                  <p class="product-link__price">$ 75.00 USD</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-3.png" alt="set-of-potterys" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Set Of Potterys</h4>
+                  <p class="product-link__price">$ 125.00 USD</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-4.png" alt="vase" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Orange Ceramic</h4>
+                  <p class="product-link__price">$ 55.00 USD</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-5.png" alt="vase" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Dark Bowl</h4>
+                  <p class="product-link__price">$ 115.00 USD</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a
+                class="link product-link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img src="./image/project-image-6.png" alt="vase" />
+                <div class="product-link__description">
+                  <h4 class="product-link__title">Square Pottery</h4>
+                  <p class="product-link__price">$ 75.00 USD</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="button products-grid__button" type="button">
+            View All Products
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
