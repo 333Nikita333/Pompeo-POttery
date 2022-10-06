@@ -1,0 +1,19 @@
+.body-site {
+  font-family: $primary-ff, sans-serif;
+  font-weight: 400;
+
+  color: $secondary-text-color;
+}
+.logo {
+    font-family: $logo-ff, sans-serif;
+    font-size: $logo-fs;
+    line-height: calc($logo-lh / $logo-fs);
+
+    color: $primary-text-color;
+}
+.ampersand {
+  font-family: $ampersand-ff, sans-serif;
+  font-size: $ampersand-fs;
+  font-weight: calc($ampersand-fh / $ampersand-fs);
+  color: $button-ampersand-color;
+}
