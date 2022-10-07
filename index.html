@@ -7,8 +7,8 @@
     <title>Pompeo POttery</title>
     <link
       rel="icon"
-      href="https://img.icons8.com/color/48/000000/pottery.png"
       type="image/x-icon"
+      href="./Pompeo-POttery/image/favicon.ico"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,74 +23,84 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body class="body-site">
     <!-- Хедер -->
     <header class="header">
-      <a href="./index.html" class="link logo">Pompeo</a>
-      <!-- Навигация -->
-      <nav class="nav">
-        <ul class="list nav__list">
-          <li class="item nav__item">
-            <a
-              class="link nav__link nav__link--current"
-              href="./index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-              >Home</a
-            >
-          </li>
-          <li class="item nav__item">
-            <a
-              class="link nav__link"
-              href="./index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-              >About</a
-            >
-          </li>
-          <li class="item nav__item">
-            <a
-              class="link nav__link"
-              href="./index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-              >Shop</a
-            >
-          </li>
-          <li class="item nav__item">
-            <a
-              class="link nav__link"
-              href="./index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button class="button-cart" type="button">
-        <svg class="button-cart__icon" width="20" height="20">
-          <use href="./image/cart.svg"></use>
-        </svg>
-        Cart
-      </button>
+      <div class="container header__content">
+        <a
+          class="link logo header__logo"
+          href="./index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Pompeo</a
+        >
+        <!-- Навигация -->
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="item nav__item">
+              <a
+                class="link nav__link nav__link--current"
+                href="./index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Home</a
+              >
+            </li>
+            <li class="item nav__item">
+              <a
+                class="link nav__link"
+                href="./index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+                >About</a
+              >
+            </li>
+            <li class="item nav__item">
+              <a
+                class="link nav__link"
+                href="./index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Shop</a
+              >
+            </li>
+            <li class="item nav__item">
+              <a
+                class="link nav__link"
+                href="./index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="link button-cart" href="" rel="noopener noreferrer">
+          <svg class="icon button-cart__icon" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-cart"></use>
+          </svg>
+          Cart
+        </a>
+      </div>
     </header>
     <main>
       <!--Секция Герой -->
       <section class="section hero">
-        <b class="section-description">Pompeo POttery</b>
-        <h1 class="hero__title">
-          Unique Porcelain<span class="ampersand">&</span>Stone Collection
-        </h1>
-        <p class="hero__text">
-          Unique & modern pottery made by our master in porcelain & stones
-        </p>
-        <button class="button button-shop" type="button">
-          Shop Collection
-        </button>
+        <div class="container">
+          <b class="section-description">Pompeo POttery</b>
+          <h1 class="hero__title">
+            Unique Porcelain <span class="ampersand">&</span><br> Stone Collection
+          </h1>
+          <p class="hero__text">
+            Unique & modern pottery made by our master in porcelain & stones
+          </p>
+          <button class="button button-shop" type="button">
+            Shop Collection
+          </button>
+        </div>
       </section>
       <!-- Секция описания продукции -->
       <section class="section description-projects">
@@ -163,7 +173,7 @@
       <!-- Секция Примеров продукции -->
       <section class="section examples-products">
         <h2 class="examples-products__side-text">Featured Products</h2>
-        <ul class="list examples-products__list">
+        <ul class="list container examples-products__list">
           <li class="item examples-products__item">
             <img
               class="img"

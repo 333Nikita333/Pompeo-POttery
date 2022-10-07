@@ -1,0 +1,42 @@
+.hero {
+    max-width: 1440px;
+    padding-top: 192px;
+    padding-bottom: 174px;
+
+    background-image: url(../images/image-hero.png), url(../images/hero-backimage.png);
+    background-size: 784px, cover;
+    background-position: top 127px right 33px, center;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 14px;
+    
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    &__text {
+        margin-bottom: 51px;
+        
+        font-family: $secondary-ff;
+        font-size: $hero-title-fs;
+        line-height: calc($hero-title-lh / $hero-title-fs);
+
+        color: $secondary-text-color;
+    }
+}
+.section-description {
+    font-weight: 700;
+    font-size: $section-description-fs;
+    line-height: calc($section-description-lh / $section-description-fs);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: $section-description-text-color;
+
+    .hero & {
+        margin-bottom: 12px;
+    }
+}

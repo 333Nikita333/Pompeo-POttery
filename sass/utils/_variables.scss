@@ -8,10 +8,20 @@ $logo-ff: Pacifico;
 // Переменные font-size
 $ampersand-fs :68px;
 $logo-fs: 33px;
+$nav-link-fs: 12px;
+$button-cart-fs: 14px;
+$section-description-fs: 14px;
+$hero-title-fs: 16px;
+$button-fs: 12px;
 
 // Переменные line-height
 $ampersand-lh: 68px;
 $logo-lh: 40px;
+$nav-link-lh: 22px;
+$button-cart-lh: 20px;
+$section-description-lh: 24px;
+$hero-title-lh: 26px;
+$button-lh: 22px;
 
 // Переменные основных цветов
 $primary-text-color: #000000;
@@ -20,3 +30,8 @@ $side-text-color: #DBDBDB;
 $button-ampersand-color: #AC1313;
 $section-description-text-color: #D77474;
 $subscribe-form-text-color: #A1A1A1;
+// ------
+$accent-color: #AC1313;
+
+$time-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

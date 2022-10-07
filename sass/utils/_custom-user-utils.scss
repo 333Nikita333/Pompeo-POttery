@@ -1,19 +1,63 @@
 .body-site {
-  font-family: $primary-ff, sans-serif;
-  font-weight: 400;
-
-  color: $secondary-text-color;
+   font-family: $primary-ff, sans-serif;
+   font-weight: 400;
 }
+
+.section {
+   padding: 120px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.container {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 24px;
+}
+
+.list {
+   padding: 0;
+   margin: 0;
+
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
 .logo {
-    font-family: $logo-ff, sans-serif;
-    font-size: $logo-fs;
-    line-height: calc($logo-lh / $logo-fs);
+   font-family: $logo-ff, sans-serif;
+   font-size: $logo-fs;
+   line-height: calc($logo-lh / $logo-fs);
 
-    color: $primary-text-color;
+   color: $primary-text-color;
 }
+
+.icon {
+   fill: currentColor;
+}
+
+.button {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 195px;
+   padding: 20px;
+
+   font-weight: 700;
+   font-size: $button-fs;
+   line-height: calc($button-lh / $button-fs);
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #ffffff;
+   background-color: $button-ampersand-color;
+}
+
 .ampersand {
-  font-family: $ampersand-ff, sans-serif;
-  font-size: $ampersand-fs;
-  font-weight: calc($ampersand-fh / $ampersand-fs);
-  color: $button-ampersand-color;
+   font-family: $ampersand-ff, sans-serif;
+   font-size: $ampersand-fs;
+   font-weight: calc($ampersand-lh / $ampersand-fs);
+   color: $button-ampersand-color;
 }
