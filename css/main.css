@@ -319,6 +319,8 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 77px;
+  padding-bottom: 49px;
 }
 .examples-products .side-text {
   top: 363px;
@@ -394,4 +396,55 @@ h6 {
 }
 .product-description__link:hover, .product-description__link:focus {
   color: #AC1313;
+}
+
+.product-collections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-collections .side-text {
+  left: -40px;
+}
+
+.collections-container {
+  text-align: center;
+}
+.collections-container__title {
+  margin-top: 17px;
+  margin-bottom: 63px;
+}
+
+.products-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 19px;
+  margin-bottom: 61px;
+}
+.products-grid .item {
+  -ms-flex-preferred-size: calc((100% - 40px) / 3);
+      flex-basis: calc((100% - 40px) / 3);
+}
+
+.product-link__description {
+  padding: 15px 0;
+  text-align: left;
+  border-bottom: 1px solid #DBDBDB;
+}
+.product-link__text {
+  font-family: Libre Franklin;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #6C6C6C;
+}
+.product-link__price {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */

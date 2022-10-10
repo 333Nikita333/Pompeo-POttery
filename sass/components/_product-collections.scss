@@ -1,0 +1,50 @@
+.product-collections {
+    display: flex;
+    align-items: center;
+
+    & .side-text {
+        left: -40px;
+    }
+}
+.collections-container {
+    text-align: center;
+
+    &__title {
+        margin-top: 17px;
+        margin-bottom: 63px;
+    }
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    margin-bottom: 61px;
+
+    & .item {
+        flex-basis: calc((100% - 2*20px) / 3);
+    }
+}
+.product-link {
+    &__description {
+        padding: 15px 0;
+
+        text-align: left;
+
+        border-bottom: 1px solid $side-text-color;
+    }
+    &__text {
+        font-family: $secondary-ff;
+        font-size: $hero-title-fs;
+        line-height: calc($hero-title-lh / $hero-title-fs);
+
+        color: $secondary-text-color;
+    }
+
+    &__price {
+        font-size: $primary-text-fs;
+        line-height: calc($primary-text-lh / $primary-text-fs);
+
+        color: #000000;
+    }
+
+}
