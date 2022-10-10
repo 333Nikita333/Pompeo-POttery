@@ -23,7 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css.map" />
     <title>Document</title>
   </head>
   <body class="body-site">
@@ -46,7 +46,7 @@
                 href="./index.html"
                 rel="noopener noreferrer"
                 target="_blank"
-                >Homester</a
+                >Home</a
               >
             </li>
             <li class="item nav__item">
@@ -92,7 +92,8 @@
         <div class="container">
           <b class="section-description">Pompeo POttery</b>
           <h1 class="hero__title">
-            Unique Porcelain <span class="ampersand">&</span><br> Stone Collection
+            Unique Porcelain <span class="ampersand">&</span><br />
+            Stone Collection
           </h1>
           <p class="hero__text">
             Unique & modern pottery made by our master in porcelain & stones
@@ -104,48 +105,36 @@
       </section>
       <!-- Секция описания продукции -->
       <section class="section description-projects">
-        <h2 class="description-projects__side-text">Hand Craft Pottery</h2>
+        <h2 class="side-text">Hand Craft Pottery</h2>
         <div class="container description-projects__container">
           <b class="section-description">Product Categories</b>
-          <h3 class="description-projects__title">
-            Porcelain<span class="ampersand">&</span>Pottery
+          <h3 class="title description-projects__title">
+            Porcelain <span class="ampersand">&</span> Pottery
           </h3>
           <ul class="list projects">
             <li class="item project-vase">
-              <img
-                width="70"
-                height="70"
-                class="img"
-                src="./image/description-image-1.png"
-                alt="vase"
-              />
-              <span class="project-item__text">Vases</span>
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/icons.svg#icon-vase"></use>
+              </svg>
+              <span class="projects__text">Vases</span>
             </li>
             <li class="item project-mug">
-              <img
-                width="70"
-                height="70"
-                class="img"
-                src="./image/description-image-2.png"
-                alt="mug"
-              />
-              <span class="project-item__text">Vases</span>
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/icons.svg#icon-mug"></use>
+              </svg>
+              <span class="projects__text">Mugs</span>
             </li>
             <li class="item project-plate">
-              <img
-                width="70"
-                height="70"
-                class="img"
-                src="./image/description-image-3.png"
-                alt="p;late"
-              />
-              <span class="project-item__text">Vases</span>
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/icons.svg#icon-plate"></use>
+              </svg>
+              <span class="projects__text">Plates</span>
             </li>
           </ul>
           <ul class="list achievements">
             <li class="item achievements__item">
               <h4 class="achievements__title">
-                Hand Grafted Pottery since 1990
+                Hand Grafted<br />Pottery since 1990
               </h4>
               <p class="achievements__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -155,9 +144,9 @@
                 rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.
               </p>
             </li>
-            <li class="item">
+            <li class="item achievements__item">
               <h4 class="achievements__title">
-                We Provide Premium Pottery Produts
+                We Provide Premium<br />Pottery Produts
               </h4>
               <p class="achievements__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -172,59 +161,67 @@
       </section>
       <!-- Секция Примеров продукции -->
       <section class="section examples-products">
-        <h2 class="examples-products__side-text">Featured Products</h2>
-        <ul class="list container examples-products__list">
-          <li class="item examples-products__item">
-            <img
-              class="img"
-              src="./image/features-image-1.png"
-              alt="vase"
-              width="252"
-            />
-            <div class="product-description">
-              <h3 class="product-description__title">Gold & Black Pottery</h3>
-              <p class="product-description__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
-                eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim
-                veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex
-                ea commodo consequatuisaute.
-              </p>
-              <a
-                class="link product-description__link"
-                href=""
-                rel="noopener noreferrer"
-                >View Details</a
-              >
-            </div>
-          </li>
-          <li class="item featured-products__item">
-            <img
-              class="img"
-              src="./image/features-image-2.png"
-              alt="vase"
-              width="252"
-            />
-            <div class="product-description">
-              <h3 class="product-description__title">Orange Ceramic</h3>
-              <p class="product-description__text">
-                Pri cu dico labores officiis, odio principes complectitur ad
-                sea. Sea id doctus forensibus, nec lorem vocent aliquam eu.
-                Aliquid definitiones id cum, ad meliore perpetua referrentur
-                sed. Quas suscipit ad mea verear vivendo tincidunt.
-              </p>
-              <a
-                class="link product-description__link"
-                href=""
-                rel="noopener noreferrer"
-                >View Details</a
-              >
-            </div>
-          </li>
-        </ul>
+        <h2 class="side-text">Featured Products</h2>
+        <div class="container">
+          <ul class="list examples-products__list">
+            <li class="item examples-products__item">
+              <div class="examples-photo">
+                <span class="examples-photo__background"></span>
+                <img
+                  class="img examples-photo__img"
+                  src="./images/features-image-1.png"
+                  alt="vase"
+                />
+              </div>
+              <div class="examples-description">
+                <h3 class="examples-description__title">
+                  Gold & Black Pottery
+                </h3>
+                <p class="examples-description__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad
+                  minim veniam, quis nostrud exercitationulco laboris nisi ut
+                  aliquip ex ea commodo consequatuisaute.
+                </p>
+                <a
+                  class="link product-description__link"
+                  href=""
+                  rel="noopener noreferrer"
+                  >View Details</a
+                >
+              </div>
+            </li>
+            <li class="item examples-products__item">
+              <div class="examples-photo">
+                <span class="examples-photo__background"></span>
+                <img
+                  class="img examples-photo__img"
+                  src="./images/features-image-2.png"
+                  alt="vase"
+                />
+              </div>
+              <div class="examples-description">
+                <h3 class="examples-description__title">Orange Ceramic</h3>
+                <p class="examples-description__text">
+                  Pri cu dico labores officiis, odio principes complectitur ad
+                  sea. Sea id doctus forensibus, nec lorem vocent aliquam eu.
+                  Aliquid definitiones id cum, ad meliore perpetua referrentur
+                  sed. Quas suscipit ad mea verear vivendo tincidunt.
+                </p>
+                <a
+                  class="link product-description__link"
+                  href=""
+                  rel="noopener noreferrer"
+                  >View Details</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Секция Карточек товаров -->
       <section class="section product-collections">
-        <h2 class="product-collections__side-text">Product Collections</h2>
+        <h2 class="side-text">Product Collections</h2>
         <div class="container collections-container">
           <b class="section-description">Our online store</b>
           <h3 class="collections-container__title">Pottery Collection</h3>
@@ -356,7 +353,7 @@
       </section>
       <!-- Секция Подписки -->
       <section class="section subscribe">
-        <h2 class="subscribe__side-text">Let's Get In touch</h2>
+        <h2 class="side-text">Let's Get In touch</h2>
         <div class="container subscribe__content">
           <svg class="icon" width="80" height="80">
             <use href="./image/icons.svg#icon-telegram"></use>
