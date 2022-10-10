@@ -3,10 +3,24 @@
    font-weight: 400;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
 .section {
+   position: relative;
+   max-width: 1440px;
    padding: 120px 0;
    margin-right: auto;
    margin-left: auto;
+
+   border-bottom: 1px solid #ebebeb;
 }
 
 .container {
@@ -60,4 +74,9 @@
    font-size: $ampersand-fs;
    font-weight: calc($ampersand-lh / $ampersand-fs);
    color: $button-ampersand-color;
+}
+.title {
+   font-weight: 700;
+   font-size: $title-fs;
+   line-height: calc($title-lh / $title-fs);
 }
