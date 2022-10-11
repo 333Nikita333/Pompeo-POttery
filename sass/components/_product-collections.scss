@@ -1,50 +1,60 @@
 .product-collections {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    & .side-text {
-        left: -40px;
-    }
+  & .side-text {
+    left: -50px;
+  }
 }
 .collections-container {
-    text-align: center;
+  text-align: center;
 
-    &__title {
-        margin-top: 17px;
-        margin-bottom: 63px;
-    }
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 63px;
+  }
 }
 .products-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19px;
-    margin-bottom: 61px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  margin-bottom: 61px;
 
-    & .item {
-        flex-basis: calc((100% - 2*20px) / 3);
-    }
+  & .item {
+    flex-basis: calc((100% - 2 * 20px) / 3);
+  }
 }
 .product-link {
-    &__description {
-        padding: 15px 0;
+  display: block;
+  box-shadow: none;
+  transition: box-shadow $time-duration $timing-function;
 
-        text-align: left;
+  &:hover,
+  &:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
 
-        border-bottom: 1px solid $side-text-color;
-    }
-    &__text {
-        font-family: $secondary-ff;
-        font-size: $hero-title-fs;
-        line-height: calc($hero-title-lh / $hero-title-fs);
+  &__description {
+    padding: 15px 0;
 
-        color: $secondary-text-color;
-    }
+    text-align: left;
 
-    &__price {
-        font-size: $primary-text-fs;
-        line-height: calc($primary-text-lh / $primary-text-fs);
+    border-bottom: 1px solid $side-text-color;
+  }
 
-        color: #000000;
-    }
+  &__text {
+    font-family: $secondary-ff;
+    font-size: $hero-title-fs;
+    line-height: calc($hero-title-lh / $hero-title-fs);
 
+    color: $secondary-text-color;
+  }
+
+  &__price {
+    font-size: $primary-text-fs;
+    line-height: calc($primary-text-lh / $primary-text-fs);
+
+    color: #000000;
+  }
 }

@@ -1,0 +1,40 @@
+.shopping {
+  background-image: linear-gradient(
+      to right,
+      rgba(108, 108, 108, 0.1),
+      rgba(108, 108, 108, 0.1)
+    ),
+    url(../images/backimage-shopping.png);
+
+  &__section-description {
+    margin-bottom: 7px;
+
+    font-weight: 400;
+  }
+  &__title {
+    $fs: 36px;
+    $lh: 46px;
+    margin-bottom: 13px;
+
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+  }
+  &__text {
+    $fs: 16px;
+    $lh: 24px;
+    margin-bottom: 30px;
+
+    font-family: $secondary-ff;
+    font-weight: 700;
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+
+    color: $secondary-text-color;
+
+    & .link {
+        text-decoration: underline;
+
+        color: $accent-color;
+    }
+  }
+}

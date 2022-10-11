@@ -1,0 +1,118 @@
+.subscribe {
+  $fs: 14px;
+  $lh: 20px;
+
+  display: flex;
+  align-items: center;
+
+  & .side-text {
+    right: -50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .icon {
+      margin-bottom: 40px;
+
+      color: #ffffff;
+      background-color: #ebb96a;
+    }
+  }
+
+  &__section-description {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+  }
+
+  &__title {
+    margin-bottom: 63px;
+
+    font-weight: 400;
+  }
+
+  &__form {
+    text-align: center;
+  }
+
+  &__field {
+    padding-top: 13px;
+    padding-right: 13px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+
+    font-family: $subscribe-form-ff;
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+
+    border: 1px solid #ebebeb;
+    color: $subscribe-form-text-color;
+  }
+
+  &__button {
+    min-width: 175px;
+    margin-bottom: 40px;
+    padding: 12px 7px;
+
+    font-family: $subscribe-form-ff;
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: $primary-text-color;
+  }
+}
+.checkbox {
+  $fs: 14px;
+  $lh: 20px;
+
+  position: relative;
+  display: block;
+
+  & .icon {
+    opacity: 0;;
+    position: absolute;
+    top: 3px;
+    left: 98px;
+
+    background-color: #8534ff;
+    border-radius: 2px;
+    border: 2px solid #8534ff;
+
+    transition: opacity $time-duration $timing-function;
+  }
+
+  &__text {
+    user-select: none;
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+
+    color: $subscribe-form-text-color;
+  }
+
+  &__field {
+    // display: none;
+
+    &:checked + .icon {
+      opacity: 1;
+    }
+    &:checked {
+      opacity: 0;
+    }
+  }
+}
+// .checkbox__text::before {
+//     content: "";
+//     position: absolute;
+//     top: 3px;
+//     left: 98px;
+//     display: block;
+//     width: 13px;
+//     height: 13px;
+
+//     background-color: #8534FF;
+// }

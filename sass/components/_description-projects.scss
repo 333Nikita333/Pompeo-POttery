@@ -1,104 +1,104 @@
 .side-text {
-    position: absolute;
-    font-size: $side-text-fs;
-    line-height: calc($side-text-lh / $side-text-fs);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  position: absolute;
+  font-size: $side-text-fs;
+  line-height: calc($side-text-lh / $side-text-fs);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-    color: $side-text-color;
+  color: $side-text-color;
 
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .description-projects {
-    display: flex;
+  display: flex;
+  align-items: center;
 
-    &__container {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
+  &__container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 
-    & .side-text {
-        top: 291px;
-        left: -50px;
-    }
+  & .side-text {
+    left: -50px;
+  }
 
-    &__title {
-        margin-bottom: 63px;
-    }
+  &__title {
+    margin-bottom: 63px;
+  }
 }
 
 .description-projects__container {
-    text-align: center;
+  text-align: center;
 
-    & .section-description {
-        margin-bottom: 8px;
-    }
+  & .section-description {
+    margin-bottom: 8px;
+  }
 }
 
 .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 151px;
+  margin-bottom: 90px;
+  padding-right: 89px;
+  padding-left: 89px;
+
+  & .item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 151px;
-    margin-bottom: 90px;
-    padding-right: 89px;
-    padding-left: 89px;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100% - 2 * 151px - 2 * 89px) / 3);
+    max-width: 240px;
 
-    & .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-basis: calc((100% - 2*151px - 2*89px) / 3);
-        max-width: 240px;
+    color: #ffffff;
+    border: 30px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
 
-        color: #ffffff;
-        border: 30px solid rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-    }
-
-    &__text {
-        font-size: $project-text-fs;
-        line-height: calc($project-text-lh / $project-text-fs);
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
+  &__text {
+    font-size: $project-text-fs;
+    line-height: calc($project-text-lh / $project-text-fs);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
 
 .project-vase {
-    background-color: #E4B366;
+  background-color: #e4b366;
 }
 
 .project-mug {
-    background-color: #F05B10;
+  background-color: #f05b10;
 }
 
 .project-plate {
-    background-color: #A21010;
+  background-color: #a21010;
 }
 
 .achievements {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 142px;
-    text-align: left;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 142px;
+  text-align: left;
 
-    &__item {
-        flex-basis: calc((100% - 142px) / 2);
-    }
-    &__title {
-        margin-bottom: 26px;
-        
-        font-weight: 700;
-        font-size: $achievements-title-fs;
-        line-height: calc($achievements-title-lh / $achievements-title-fs);
-    }
+  &__item {
+    flex-basis: calc((100% - 142px) / 2);
+  }
+  &__title {
+    margin-bottom: 26px;
 
-    &__text {
-        font-family: $secondary-ff;
-        font-size: $primary-text-fs;
-        line-height: calc($primary-text-lh / $primary-text-fs);
+    font-weight: 700;
+    font-size: $achievements-title-fs;
+    line-height: calc($achievements-title-lh / $achievements-title-fs);
+  }
 
-        color: $secondary-text-color;
-    }
+  &__text {
+    font-family: $secondary-ff;
+    font-size: $primary-text-fs;
+    line-height: calc($primary-text-lh / $primary-text-fs);
+
+    color: $secondary-text-color;
+  }
 }
