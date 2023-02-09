@@ -43,6 +43,11 @@ img {
 
 .link {
   text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .logo {
